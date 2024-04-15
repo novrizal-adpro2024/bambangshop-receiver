@@ -68,16 +68,16 @@ You can install Postman via this website: https://www.postman.com/downloads/
     -   [x] Commit: `Implement list_all_as_string function in Notification repository.`
     -   [x] Write answers of your learning module's "Reflection Subscriber-1" questions in this README.
 -   **STAGE 3: Implement services and controllers**
-    -   [ ] Commit: `Create Notification service struct skeleton.`
-    -   [ ] Commit: `Implement subscribe function in Notification service.`
-    -   [ ] Commit: `Implement subscribe function in Notification controller.`
-    -   [ ] Commit: `Implement unsubscribe function in Notification service.`
-    -   [ ] Commit: `Implement unsubscribe function in Notification controller.`
-    -   [ ] Commit: `Implement receive_notification function in Notification service.`
-    -   [ ] Commit: `Implement receive function in Notification controller.`
-    -   [ ] Commit: `Implement list_messages function in Notification service.`
-    -   [ ] Commit: `Implement list function in Notification controller.`
-    -   [ ] Write answers of your learning module's "Reflection Subscriber-2" questions in this README.
+    -   [x] Commit: `Create Notification service struct skeleton.`
+    -   [x] Commit: `Implement subscribe function in Notification service.`
+    -   [x] Commit: `Implement subscribe function in Notification controller.`
+    -   [x] Commit: `Implement unsubscribe function in Notification service.`
+    -   [x] Commit: `Implement unsubscribe function in Notification controller.`
+    -   [x] Commit: `Implement receive_notification function in Notification service.`
+    -   [x] Commit: `Implement receive function in Notification controller.`
+    -   [x] Commit: `Implement list_messages function in Notification service.`
+    -   [x] Commit: `Implement list function in Notification controller.`
+    -   [x] Write answers of your learning module's "Reflection Subscriber-2" questions in this README.
 
 ## Your Reflections
 This is the place for you to write reflections:
@@ -104,3 +104,24 @@ and data races, which could lead to unpredictable program behavior.
 So, Rust's static variables are immutable by default. This makes Rust renowned for its safety and reliability in concurrent programming compared to Java.
 
 #### Reflection Subscriber-2
+1. Have you explored things outside of the steps in the tutorial, for example: src/lib.rs? 
+If not, explain why you did not do so. If yes, explain things that you have learned from those other parts of code.
+
+**ANS:** Yes, i have explored the `src/lib.rs` & `Cargo.toml` code. 
+
+- In `lib.rs`, there are dependencies and configurations. Also, there are initializations of APP_CONFIG and REQUEST_CLIENT which have been used throughout the code implementation. This file serves to define the necessary components of the app.
+- `Cargo.toml` is the main configuration file for Rust projects. It serces as the central hub for managing dependencies, configuring the project & defining project metadata. It plays a crucial role in setting up and maintaining Rust projects, ensuring consistency & manageability throughout the development process.
+
+2. Since you have completed the tutorial by now and have tried to test your notification system by spawning multiple instances of Receiver, 
+explain how Observer pattern eases you to plug in more subscribers. How about spawning more than one instance of Main app, will it still be easy enough to add to the system?
+
+**ANS:** Observer Pattern simplifies adding additional subscribers to the notification system, making the code architecture more flexible and scalable. 
+This is because the Observer pattern separates the publisher and its observers. Spawning more than one instance of the Main app would still be easy to do because there is parallel processing for notifications, making the code more efficient.
+
+3. Have you tried to make your own Tests, or enhance documentation on your Postman collection? 
+If you have tried those features, tell us whether it is useful for your work 
+(it can be your tutorial work or your Group Project).
+
+**ANS:** Yes, a little bit. I tried to make my own tests and enhance documentation on my own Postman collection (adding clear descriptions to each requests).
+However, I'm not quite sure if it's already correct. I do believe that it is very useful for my work. 
+It helps condugcting automated testing when testing server responses. 
